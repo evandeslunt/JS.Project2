@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.validate.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<title>Bulls and Cows</title>
+</head>
+
+<body>
+<div id="wrapper">
+<h1>Bulls and Cows Number Guessing Game</h1>
+
+<div id="howTo">
+<h2>How to Play</h2>
+<p>The computer will generate a four-digit random number, using the digits 1-9, with no
+repeated digits. Use these hints to help you guess the number:</p> 
+<ul>
+<li>Your guess must be 4 unique digits between 1 and 9.</li>
+<li>Every correct digit earns a cow.</li>
+<li>Every correct digit in the correct location earns a bull. </li>
+<li>Get 4 bulls to win.</li>
+</ul>
+</div><!--howTo-->
+
+<div id="play">
+<form id="frmGuess" method="post" action="">
+<label for="guess">Enter your guess:</label><input requied type="text" id="guess" name="guess" />
+<br />
+<input type="submit" value="Guess!" id="guessbtn"/>
+</form>
+</div><!--play-->
+
+
+<div id="results" class="hidden">
+<h2>Results</h2>
+<div class="result"></div>
+</div><!--results-->
+
+<div id="win" class="hidden">
+<input type="button" value="Play Again" id="playAgain" class="hidden"/>
+<div class="win">
+<h2>You Guessed the Number!</h2>
+</div>
+</div><!--win-->
+</div><!--wrapper-->
+<footer>
+<p>Liz Ife Van Deslunt &nbsp; Javascript Spring 2014</p>
+</footer>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div><!--wrapper-->
+<footer>
+
+</footer>
+</body>
+</html>

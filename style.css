@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* General document formatting */
+
+body { font-family: Trebuchet, Geneva, sans-serif; background-image: url("bkgd.png"); }
+h1 { text-align: center; }
+
+
+#wrapper, #howTo, #play, #results, #win {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	padding: 0 1em 0 1em;
+	background-color: white;
+	border: 1px solid #8F8FB2;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+#wrapper { 
+	width: 70%; 
+	margin-top: 0; 
+	background-color: #E6E6FF;
+	border: 1px solid #8F8FB2;
+	padding: 1em 1em 1em 1em;
+	overflow: auto;
+	background-image: url("grass.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	opacity: .5;
+	text-align: center;
+	font-size: 10px;
+}
+
+#results { max-height: 300px; }
+
+/* Form Formatting */
+form { 	padding: 1em 1em 1em 1em; }
+#playAgain, #guessbtn { 
+	height: 30px; 
+	margin-top: 15px; 
+	background-color: #DBDBFF;
+	border: 1px solid #B8B8E6;
+}
+#playAgain { margin-top: 15px; float: right; }
+#playAgain:hover, #guessbtn:hover { box-shadow: 1px 1px 1px #B8B8E6; }
+
+/* This code makes labels and input display in a grid */
+label, input { display: inline-block; }
+input { margin-left: 5px; }
+
+/* Validation formatting */
+label.error { color: red; margin-left: 5px; }
+input.error { border: 1px solid red; }
+
+/* Misc formatting */
+.win { font-size: 150%; }
+.hidden { display: none; }
